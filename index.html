@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://raw.github.com/jrburke/requirejs/master/require.js"></script>
+  <script>
+    (function(){
+        require({
+            paths: {
+                cs: 'https://raw.github.com/jrburke/require-cs/master/cs',
+                CoffeeScript: 'https://raw.github.com/jrburke/require-cs/master/CoffeeScript'
+            },
+            shim: {
+                shim: ['dep'],
+                csshim: ['dep']
+            }
+        }, ['cs!csshim'], function() {
+            // Replace dependency with 'shim' to see the example work correctly
+        });        
+    })();
+  </script>
+</head>
+<body>
+<div id="shim">Dependency undefined</div>
+</body>
+</html>
