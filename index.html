@@ -11,7 +11,8 @@
             },
             shim: {
                 shim: ['dep'],
-                csshim: ['dep']
+                "cs!csshim": ['dep'],
+                "csshim": ['dep']                
             }
         }, ['cs!csshim'], function() {
             // Replace dependency with 'shim' to see the example work correctly
